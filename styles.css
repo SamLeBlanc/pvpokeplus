@@ -17,7 +17,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -33,6 +32,11 @@ h2{
     font-size: 18px;
     margin: 0;
 }
+
+#myTable_filter {
+    position: fixed;
+}
+
 
 #myTable_filter input {
     color: black;
@@ -73,8 +77,16 @@ h2{
     max-width: 500px !important;
   }
 
+.dataTables_scroll {
+    margin-top: 75px;
+}
+
 .invisible{
     display: none;
+}
+
+.center{
+    text-align: center;
 }
 
 .font-zero{
@@ -96,6 +108,50 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.dataTables_scrollBody{
+    border: none !important;
+    overflow-x: hidden !important;
+}
+
+.dataTables_scrollHead{
+    overflow-x: hidden !important;
+}
+
+.dataTables_scroll{
+    overflow-x: hidden !important;
+}
+
+.dataTables_wrapper{
+    overflow-x: hidden !important;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    scrollbar-width: none;
+}
+
+table.dataTable.no-footer {
+    border-bottom: none !important;
+}
+
+/* Scrollbars */
+
+.dataTables_scrollBody::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.dataTables_scrollBody{
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 #myTable td:nth-child(5), #myTable th:nth-child(5) {

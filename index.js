@@ -36,9 +36,20 @@ fetch('pvpokeplus.csv')
             },
             scrollCollapse: true,
             scrollX: false,
+            scrollY: "90vh",
             order: [[0, 'asc']],
           });
 
-  
+
+        for (let i = 5; i <= 11; i++) {
+            $('table.dataTable > thead > tr > td:nth-child(' + (i) + ')').addClass('invisible');
+            $('table.dataTable > thead > tr > th:nth-child(' + (i) + ')').addClass('invisible');
+        }
+
+        for (let i = 1; i <= 4; i++) {
+            $('table.dataTable > thead > tr > td:nth-child(' + (i) + ')').addClass('center');
+            $('table.dataTable > thead > tr > th:nth-child(' + (i) + ')').addClass('center');
+        }
+
     });
 });
