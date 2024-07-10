@@ -41,13 +41,20 @@ h2{
 
 
 #myTable{
-    max-width: 500px;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.4);
     border: 5px solid black;
     border-radius: 10px;
-    max-width: min(500px, 90vw) !important;
-    width: min(500px, 90vw) !important;
+    width: 500px !important;
+    max-width: 500px !important;
+}
+
+@media (max-width: 768px) {
+    #myTable{
+        max-width: 90vw !important;
+        width: 90vw !important;
+    }
+
 }
 
 .dataTables_wrapper .dataTables_filter {
