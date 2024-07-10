@@ -7,6 +7,7 @@ body {
     background-size: cover;
     background-position: center bottom;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .centered-container{
@@ -15,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -47,10 +49,16 @@ h2{
     border-radius: 10px;
     width: 500px !important;
     max-width: 500px !important;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
     #myTable{
+        max-width: 90vw !important;
+        width: 90vw !important;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
         max-width: 90vw !important;
         width: 90vw !important;
     }
@@ -61,6 +69,8 @@ h2{
     width:100%;
     text-align:center !important;
     margin: 15px;
+    width: 500px !important;
+    max-width: 500px !important;
   }
 
 .invisible{
