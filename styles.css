@@ -8,6 +8,7 @@ body {
     background-position: center bottom;
     min-height: 100%;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .centered-container{
@@ -45,8 +46,7 @@ h2{
 #myTable{
     font-weight: bold;
     background: rgba(255, 255, 255, 0.4);
-    border: 5px solid black;
-    border-radius: 10px;
+    border-top: 5px solid black;
     width: 500px !important;
     max-width: 500px !important;
     overflow-x: hidden;
