@@ -56,7 +56,15 @@ h2{
     overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
+.dataTables_wrapper .dataTables_filter {
+    width:100%;
+    text-align:center !important;
+    margin: 15px;
+    width: 500px !important;
+    max-width: 500px !important;
+  }
+
+  @media (max-width: 768px) {
     #myTable{
         max-width: 90vw !important;
         width: 90vw !important;
@@ -68,14 +76,6 @@ h2{
     }
 
 }
-
-.dataTables_wrapper .dataTables_filter {
-    width:100%;
-    text-align:center !important;
-    margin: 15px;
-    width: 500px !important;
-    max-width: 500px !important;
-  }
 
 .dataTables_scroll {
     margin-top: 75px;
